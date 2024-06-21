@@ -1,0 +1,60 @@
+/* Main container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    margin: 0;
+  }
+  
+  /* Stopwatch container */
+  .stopwatch {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Time elements */
+  .time {
+    font-size: 48px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 0 10px;
+  }
+  
+  /* Time separator */
+  .stopwatch span:nth-child(even) {
+    font-size: 48px;
+  }
+  
+  /* Buttons container */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Individual buttons */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
